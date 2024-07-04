@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Screen1 from "./components/Screen1";
+import Screen2 from "./components/Screen2";
+import Screen3 from "./components/Screen3";
 
 function App() {
+
+/*  let arr={
+    name:"Ahmad",
+    City: "Lahore",
+    post: "CEO"
+  }  */
+
+    const people = [
+     // { name: "Ahmad", city: "Lahore", post: "CEO" },
+      { name: "Sara", city: "Karachi", post: "Manager" }
+    ];
+    // BASIC JAVASCRIPT: {} CREATS OBJECT  AND OBJECT DOES NOT NEEDED TO BE EXTRACTED WHEN REACIVED
+    //BASIC JAVASCRIPT: [{},{}] CREATES AN ARRAY OF OBJECTS THAT ACTUALLY HAVE OBJECTS WHICH ALSO
+    // DON'T NEEDED TO BE EXTRACTED
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Screen1 array={people[0]}/>
+      <Screen1 array={people[0]}/>
+      <Screen2/>
+      <Screen3/>
+      
     </div>
   );
 }
