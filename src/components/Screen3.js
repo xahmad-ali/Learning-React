@@ -28,9 +28,9 @@ function Screen3() {
 
     },[length,numbersAllowed,charactersAllowed])
 
-    useEffect(()=>{
+    useEffect(() => {
         generatePassword();
-    },[length,numbersAllowed,charactersAllowed])
+    }, [generatePassword]);
 
 
     const copyPassword=()=>{
