@@ -22,14 +22,15 @@ function App() {
 
 
   return (
-    <div>
-      <Screen1 array={people[0]}/>
-      <Screen1 array={people[0]}/>
-      <Screen2/>
-      <Screen3/>
-      <Screen4/>
+    <></>
+    // <div>
+    //   <Screen1 array={people[0]}/>
+    //   <Screen1 array={people[0]}/>
+    //   <Screen2/>
+    //   <Screen3/>
+    //   <Screen4/>
       
-    </div>
+    // </div>
   );
 }
 
