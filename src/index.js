@@ -7,6 +7,8 @@ import Screen1 from './components/Screen1';
 import Screen2 from './components/Screen2';
 import Screen3 from './components/Screen3';
 import Screen4 from './components/Screen4';
+import Screen5 from './components/Screen5';
+import Screen6 , {getGitInfo} from './components/Screen6';
 
 const routting =createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +17,13 @@ const routting =createBrowserRouter(
       <Route path='clour' element={<Screen2/>}/>
       <Route path='generatepassword' element={<Screen3/>}/>
       <Route path='currency' element={<Screen4/>}/>
+
+      <Route path='user/' element={<Screen5/>}>
+      <Route path=':userId' element={<Screen5/>}/>
+      </Route>
+
+      // using loader makes loadding even when cursor is hover on it 
+      <Route loader={getGitInfo} path='github' element={<Screen6/>}/>
     </Route>
   )
 )

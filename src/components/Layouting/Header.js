@@ -12,6 +12,10 @@ function Header() {
         className={({isActive})=> `font-bold p-3 hover:text-fuchsia-800 ${isActive ? 'text-fuchsia-800' :'text-stone-50'} `}> Generate Password</NavLink>
         <NavLink to='/currency' 
         className={({isActive})=> `font-bold p-3 hover:text-fuchsia-800 ${isActive ? 'text-fuchsia-800' :'text-stone-50'} `}> Currancey Changer</NavLink>
+        <NavLink to='/user'
+        className={({isActive})=> `font-bold p-3 hover:text-fuchsia-800 ${isActive ? 'text-fuchsia-800' :'text-stone-50'} `}> User </NavLink>
+         <NavLink to='/github'
+        className={({isActive})=> `font-bold p-3 hover:text-fuchsia-800 ${isActive ? 'text-fuchsia-800' :'text-stone-50'} `}> GitHuB </NavLink>
     </div>
   )
 }
