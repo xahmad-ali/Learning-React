@@ -25,4 +25,5 @@ function Screen1({array={}}) {
   );
 }
 
+
 export default Screen1;
