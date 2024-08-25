@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 function Screen5() {
 
+  // here userId is perdifened key word that takes any value i.e /ahmad  as userId 
     const {userId} = useParams();
 
   return (

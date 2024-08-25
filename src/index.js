@@ -21,8 +21,11 @@ const routting =createBrowserRouter(
       <Route path='currency' element={<Screen4/>}/>
 
       <Route path='user/' element={<Screen5/>}>
+      {/* here after user/ is userId like this  user/userId   i can change it like user/ahmad*/}
       <Route path=':userId' element={<Screen5/>}/>
+      {/* Sandwhiching is done here */}
       </Route>
+
 
       // using loader makes loadding even when cursor is hover on it 
       <Route loader={getGitInfo} path='github' element={<Screen6/>}/>
